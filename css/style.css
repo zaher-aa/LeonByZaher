@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-  width: 350px;
+  min-width: 350px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -60,6 +60,7 @@ body {
   position: fixed;
   right: 30px;
   bottom: 40px;
+  z-index: 100;
 }
 
 .scroll-to-top a {
@@ -96,7 +97,7 @@ body {
   color: #777;
 }
 
-@media (max-width: 485px) {
+@media (max-width: 600px) {
   .special-heading {
     font-size: 5rem;
   }
@@ -170,7 +171,7 @@ header .logo {
   -ms-transform: scale(1, 0);
   -o-transform: scale(1, 0);
   transform-origin: top;
-  z-index: 100;
+  z-index: 101;
   box-shadow: 2px 2px 10px #9b9b9b;
 }
 
@@ -235,6 +236,7 @@ header .welcome {
   background-size: cover;
   background-position: center;
   position: relative;
+  z-index: 100;
 }
 
 header .container:last-child {
@@ -407,12 +409,6 @@ header .container:last-child {
 
   .services .col .service > * {
     padding: 15px;
-  }
-}
-
-@media (max-width: 483px) {
-  .services-container {
-    margin-left: -14px;
   }
 }
 
@@ -604,7 +600,7 @@ header .container:last-child {
 
 .about .info .text {
   flex-basis: calc(100% - 500px);
-  line-height: 1.8;
+  line-height: 2;
 }
 
 .about .info .text .top {
@@ -768,5 +764,7 @@ footer {
 
 footer .special {
   color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: none;
 }
 /* ! End Footer */
